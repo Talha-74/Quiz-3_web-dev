@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    display: inline-block;
+    background-color: rgb(23, 23, 24);
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+
+}
+
+nav ul {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+nav ul li {
+    flex-direction: row;
+    font-family: 'Mali', cursive;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+
+nav ul li:not(:first-child) {
+
+    margin-top: 20px;
+    margin-left: 98px;
+}
+
+nav ul li:nth-child(2) {
+    margin-left: 50px;
+}
+
+.first {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+
+}
+
+.first h1 {
+    position: relative;
+    font-size: 120px;
+    font-weight: 750;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* h1::after {
+    transform: rotate(0deg);
+} */
+
+.first h1::after {
+    content: '';
+    border-top: 6px solid #fc0;
+    width: 75%;
+    position: absolute;
+    display: block;
+    left: -80%;
+    margin-top: -7%;
+    /* transform: rotateY(90deg);
+    transition: transform 0.25s linear; */
+}
+
+.two {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* gap: 30px; */
+}
+
+.two .same {
+    border: 5px solid yellow;
+    width: 50%;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.text h3 {
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    background-image: linear-gradient(120deg, #333 0%, #fc0 100%);
+    background-repeat: no-repeat;
+    background-size: 6em 0.5em;
+    background-position: 0 80%;
+    transition: background-size 0.25s ease-in;
+
+}
+.text h4 {
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.text p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.two .box {
+    margin-right: 100px;
+}
